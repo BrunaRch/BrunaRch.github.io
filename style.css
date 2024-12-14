@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* @keyframes {
+    
+} */
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+header {
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5d3869;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+body {
+  background: linear-gradient(135deg,#000000,#2c0036, #4b0082,#5a3d78,#6a5acd);
+  color: #ffffff;
+}
+
+.home h1 {
+  font-size: 31px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(132, 79, 175), 0 0 25px rgb(128, 128, 128),
+    0 0 5px rgb(73, 39, 83);
+  font-family: "roboto", sans-serif;
+}
+
+.home .redes_icons a {
+  /* text-decoration: none; */
+  color: #ffffff;
+  border-radius: 1px;
+  margin: 3px;
+  transition: 0.2s ease-in-out;
+}
+
+#home {
+  padding: 240px;
+}
+
+#sobre {
+  padding: 230px;
+}
+
+#sobre h2,
+#projetos h2,
+#habilidades h2 {
+  font-size: 30px;
+  padding-bottom: 40px;
+}
+
+#sobre p {
+  font-size: 15px;
+  font-family: sans-serif;
+}
+
+#projetos {
+  padding: 70px;
+}
+
+.projeto1 {
+  padding-bottom: 30px;
+  align-items: center;
+}
+
+.projeto1 h3,
+.projeto2 h3 {
+  font-size: 18px;
+  padding-bottom: 5px;
+  font-family: sans-serif;
+}
+
+#projetos h2 {
+}
+
+#habilidades {
+  padding: 200px;
+}
+
+.container_categorias {
+  padding-bottom: 20px;
+}
+
+.container_categorias ul li {
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+.certificados {
+  padding: 200px;
+}
