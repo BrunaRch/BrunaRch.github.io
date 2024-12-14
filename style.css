@@ -8,7 +8,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-family: 'Poppins', sans-serif;
 }
 
 header {
@@ -39,15 +39,14 @@ nav ul li a {
 }
 
 body {
-  background: linear-gradient(135deg,#000000,#2c0036, #4b0082,#5a3d78,#6a5acd);
+  background: linear-gradient(135deg,#000000,#2c0036, #4f0086,#6d4397,#998bad);
   color: #ffffff;
 }
 
 .home h1 {
   font-size: 31px;
   color: white;
-  text-shadow: 1px 1px 2px rgb(132, 79, 175), 0 0 25px rgb(128, 128, 128),
-    0 0 5px rgb(73, 39, 83);
+  text-shadow: 1px 1px 2px rgb(132, 79, 175), 0 0 25px rgb(128, 128, 128), 0 0 5px rgb(73, 39, 83);
   font-family: "roboto", sans-serif;
 }
 
@@ -98,8 +97,9 @@ body {
 #projetos h2 {
 }
 
-#habilidades {
-  padding: 200px;
+#habilidades .container_categorias {
+    display: flex;
+    justify-content: center;
 }
 
 .container_categorias {
@@ -112,5 +112,21 @@ body {
 }
 
 .certificados {
-  padding: 200px;
+  padding: 80px;
+}
+
+.certificados ul li {
+    
+    list-style: none;
+}
+
+.certificados ul li a {
+    Color:  #B59ACF;
+    text-decoration: none;
+}
+
+.foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
