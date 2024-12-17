@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Handlee&family=Iceberg&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Square&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Preahvihear&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 
-
-/* @keyframes {
-    
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -41,36 +36,16 @@ nav ul li a {
   color: #5d3869;
   border-radius: 5px;
   padding: 10px 15px;
-  text-shadow: 1px 1px 2px rgba(25, 4, 34, 0.411), 0 0 5px rgb(42, 30, 46);
+  transition: box-shadow 0.7s ease;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 15px 5px rgba(164, 81, 197, 0.74);
 }
 
 body {
-  background: linear-gradient(135deg,#000000,#2c0036, #4f0086,#6d4397,#998bad);
+  background: linear-gradient(135deg,#280131,#350341, #4f0086,#6d4397,#998bad);
   color: #ffffff;
-}
-
-.home h1 {
-  font-size: 31px;
-  padding-bottom: 25px;
-  color: white;
-  text-shadow: 1px 1px 2px rgb(132, 79, 175), 0 0 25px rgb(128, 128, 128), 0 0 5px rgb(73, 39, 83);
-  font-weight: 400;
-}
-
-.home .redes_icons a {
-  text-decoration: none;
-  color: #ffffff;
-  border-radius: 1px;
-  margin: 3px;
-  transition: 0.2s ease-in-out;
-}
-
-/* .home .redes_icons a:hover {
-  box-shadow: 0, 0, 15px, 5px, #B59ACF;
-} */
-
-.home {
-  padding: 240px;
 }
 
 #sobre {
@@ -79,58 +54,77 @@ body {
 
 #sobre h2,
 #projetos h2,
-#habilidades h2, #certificados h2 {
+#habilidades h2, #certificados h2{
   font-size: 30px;
   padding-bottom: 100px;
   text-align: center;
   font-family: "montserrat", sans-serif;
-  font-weight: 200;
-  letter-spacing: 2px;
+  font-weight:380;
+  letter-spacing: 3px;
 }
 
 #sobre p {
-  font-size: 14px;
+  font-size: 18px;
+  padding-top: 47px;
   color: #b8acc9;
   text-align: justify;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-#habilidades .container_categorias {
-  display: flex;
-  justify-content: center;
+#habilidades {
+  padding: 150px;
 }
 
 .icons {
-  color: #000000;
-  padding: 50px;
-  
+  color: #2f0344;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.7s ease;
+  margin: 50px;
+  list-style: none;
+  gap: 50px;
 }
 
-.container_categorias {
-  padding-bottom: 20px;
+.icons li i {
+  transition: transform 0.3s, color 0.3s;
+  font-size: 50px;
+}
+
+.icons li i:hover {
+  transform: scale(1.2);
+  color: #0f0214; 
 }
 
 .container_categorias ul li {
-  padding-bottom: 10px;
-  align-items: center;
-}
-
-#certificados {
-  padding: 80px;
-}
-
-#certificados ul li {
   list-style: none;
 }
 
+.container_categorias h3 {
+  text-align: center;
+  color: #9261c4;
+  letter-spacing: 4px;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+#certificados {
+  padding: 170px;
+}
+
+#certificados ul li {
+  list-style: none; 
+}
+
 #certificados ul li a {
-  Color:  #B59ACF;
-  text-decoration: none;
+  Color:  #2e0a46;
+  letter-spacing: 4px;
+  font-size: large;
 }
 
 .foot {
-  color: #a99cb4;
+  color: #512e70;
   padding: 30px;
   display: flex;
   align-items: center;
