@@ -11,14 +11,15 @@
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
     <title>Portfólio</title>
   </head>
+
   <body>
     <header>
       <h2>
         <span style="color: rgb(252, 252, 252)">Bruna</span
-        ><span style="color: rgb(106, 56, 134)">.dev/</span>
+        ><span style="color: rgb(158, 92, 153)">.dev/</span>
       </h2>
       <!-- Navegação pela pág. -->
       <nav>
@@ -33,10 +34,14 @@
 
     <!-- Section: Home -->
     <section id="home" class="home">
+      <!-- <div class="home">
+        Hello<span></span>
+      </div> -->
       <h1>
-        <span style="color:#ffffff;">Hello world! </span
-        ><br><span style="color:#d3a4ac">Bem-vindos ao meu portfólio!</span>
+        <span class="typing" style="color: aliceblue;">Hello world! </span
+        ><br><span class="typing" style="color: #eba1d8;">Bem-vindos ao meu portfólio!</span>
       </h1>
+      
 
       <!-- Redes sociais -->
       <div class="redes_icons">
@@ -59,38 +64,35 @@
       <h2>Sobre mim </h2>
       <p>
         Tenho 20 anos, gosto de desafiar minha mente, um dos motivos pelo qual
-        escolhi seguir na área de TI. Quando estava cursando Ads(análise e
+        escolhi seguir na área de TI. Quando estava cursando Ads (análise e
         desenvolvimento de sistemas), conhecendo mais sobre os variados
-        assuntos, me encontrei ainda mais na área, e por isso escolhi migrar pro
-        curso de Ciência da computação, pois queria me aprofundar na parte
-        teórica e conhecer ainda mais desse mundo.
+        assuntos, me encontrei ainda mais na área. Minha meta é trabalhar com desenvolvimento web ou back-end.
       </p>
     </section>
 
     <!-- Section: Projetos -->
-    <section id="projetos">
-      <h2>Portfólio</h2>
-      <!-- Grid de Projetos -->
+    <section id="projetos" class="projetos">
+      <!-- <h2>Portfólio</h2> -->
+
+      <!-- Grid de Projetos
       <div class="projetos-grid">
-        <!-- Projeto 1 -->
-        <div class="projeto1">
+         projeto1
+         <div class="projeto1">
           <img
             src="img/proj1.jpeg"
             alt="Captura de tela do Projeto 1"
-          />
-          <h3>Projeto 1</h3>
-          <p>
-            Descrição curta do projeto. ( tecnologias como HTML, CSS, JavaScript
-            e React.)
+          /> 
+          <h3>Portfólio 1.0</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim tenetur dicta repudiandae, sit fuga, obcaecati ea totam porro ullam at blanditiis deleniti adipisci, fugiat natus quos illo in modi explicabo!
           </p>
           <p>
             <strong>Tecnologias usadas:</strong> HTML, CSS, JavaScript, React
           </p>
           <a href="https://github.com/usuario/projeto1">Ver no GitHub</a>
-        </div>
+        </div>  -->
 
         <!-- Projeto 2 -->
-        <div class="projeto2">
+        <!-- <div class="projeto2">
           <img
             src="img/proj2.jpeg"
             alt="Captura de tela do Projeto 2"
@@ -101,16 +103,61 @@
           <a href="https://github.com/usuario/projeto2">Ver no GitHub</a
           >
         </div>
+      </div> -->
+
+      <!-- Slider de projetos -->
+
+      <div class="slider">
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="
+          radio1">
+          <input type="radio" name="radio-btn" id="
+          radio2">
+          <input type="radio" name="radio-btn" id="
+          radio3">
+          <input type="radio" name="radio-btn" id="
+          radio4">
+
+          <!-- imagens -->
+          <div class="slide first">
+            <img src="img/simulandoprojetos.jpg" alt="projeto 1">
+          </div>
+          <div class="slide">
+            <img src="img/simulando2.jpg" alt="projeto2">
+          </div>
+          <div class="slide">
+            <img src="img/simulando3.jpg" alt="projeto 3">
+          </div>
+          <div class="slide">
+            <img src="img/simulando4.jpg" alt="projeto 4">
+          </div>
+
+          <!-- navigation -->
+           <div class="navigation-btn1">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+            <div class="auto-btn1"></div>
+           </div>
+        </div>
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
       </div>
     </section>
 
+    </section>
     <!-- Section: Habilidades -->
     <section id="habilidades">
       <h2>Ferramentas</h2>
 
       <div class="container_categorias">
         <h3>Front-end</h3>
-        <ul>
+        <ul class="icons">
           <li><i class="fab fa-html5"></i></li>
           <li><i class="fab fa-css3-alt"></i></li>
           <li><i class="fab fa-js"></i></li>
@@ -122,7 +169,7 @@
       <div class="container_categorias">
         <h3>Back-end</h3>
 
-        <ul>
+        <ul class="icons">
           <li><i class="fab fa-python"></i></li>
           <li><i class="devicon-vscode-plain"></i></li>
           <li><i class="devicon-java-plain"></i></li>
@@ -158,6 +205,6 @@
     <script src="js/script.js"></script>
   </body>
   <footer class="foot">
-    <p>&copy; 2024 Bruna_dev Todos os direitos reservados.</p>
+    <p>&copy; 2024 Bruna Rocha. Todos os direitos reservados.</p>
   </footer>
 </html>
