@@ -17,35 +17,42 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    cursor: pointer;
+    transition: box-shadow 0.7s ease;
+    border-radius: 30px;
 }
 
 .div-container-2 {
     display: flex; 
     align-items: center;
     justify-content: space-between; 
-    padding: 20px;
-    flex-direction: row-reverse;
+    flex-direction:row-reverse;
+    cursor: pointer;
+    border-radius: 30px;
+    
+}
+
+.div-container-2:hover, .div-container-3:hover, .div-container:hover {
+    box-shadow: 0 0 15px 5px rgba(153, 100, 173, 0.74);
 }
 
 
 .projetos img {
-    border: 20px solid rgba(164, 81, 197, 0.74);
-    border-radius: 38px;
+    /* border: 2px solid rgb(18, 0, 27); */
+    border-radius: 14px;
     width: 100%;
     max-width: 400px;
     min-height: 110px;
     cursor: pointer;
-    transition: box-shadow 0.7s ease;
-    margin: 50px;
+    margin: 30px;
 }
 
-.projetos img:hover {
+/* .projetos img:hover {
     box-shadow: 0 0 15px 5px rgba(164, 81, 197, 0.74);
-}
+} */
 
 .text h3 {
    font-weight: 400;
-   letter-spacing: 3px;
    padding-left: 50px;
 }
 
