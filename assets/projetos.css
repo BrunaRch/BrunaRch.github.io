@@ -31,8 +31,9 @@
 .projetos img {
     border: 20px solid rgba(164, 81, 197, 0.74);
     border-radius: 38px;
+    width: 100%;
     max-width: 400px;
-    min-width: 100px;
+    min-height: 110px;
     cursor: pointer;
     transition: box-shadow 0.7s ease;
     margin: 50px;

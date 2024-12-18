@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Delius&family=Handlee&family=Iceberg&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Square&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Preahvihear&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Delius&family=Handlee&family=Iceberg&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nova+Square&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Preahvihear&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 * {
   margin: 0;
@@ -10,12 +9,11 @@
 
 header {
   color: #fff;
-  padding:  40px;
+  padding: 40px;
   display: flex;
-  position:static;
+  position: static;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 header h2 {
@@ -44,8 +42,9 @@ nav ul li a:hover {
 }
 
 body {
-  background: linear-gradient(135deg,#280131,#350341, #4f0086,#6d4397,#998bad);
+  background: linear-gradient(135deg, #280131, #350341, #4f0086, #6d4397, #998bad);
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 #sobre {
@@ -54,12 +53,13 @@ body {
 
 #sobre h2,
 #projetos h2,
-#habilidades h2, #certificados h2{
+#habilidades h2,
+#certificados h2 {
   font-size: 30px;
   padding-bottom: 100px;
   text-align: center;
   font-family: "montserrat", sans-serif;
-  font-weight:380;
+  font-weight: 380;
   letter-spacing: 3px;
 }
 
@@ -94,7 +94,7 @@ body {
 
 .icons li i:hover {
   transform: scale(1.2);
-  color: #0f0214; 
+  color: #0f0214;
 }
 
 .container_categorias ul li {
@@ -109,18 +109,53 @@ body {
   padding-top: 40px;
 }
 
+
+#certificados h2 {
+  padding-bottom: 100px;
+}
+
 #certificados {
-  padding: 170px;
+  text-align: center;
+  padding: 50px 20px;
+  /* background-color: #13061ab0; */
+  color: #ffffff;
 }
 
-#certificados ul li {
-  list-style: none; 
+.certificados-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
-#certificados ul li a {
-  Color:  #2e0a46;
-  letter-spacing: 4px;
-  font-size: large;
+.certificado-item {
+  background-color: #5d3869;
+  border-radius: 10px;
+  padding: 20px;
+  width: calc(25% - 20px);
+  min-width: 200px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.certificado-item a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.certificado-item h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.certificado-item p {
+  font-size: 14px;
+  color: #d1c4e9;
+}
+
+.certificado-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
 }
 
 .foot {
@@ -131,3 +166,112 @@ body {
   justify-content: center;
 }
 
+/* Ajustando o tamanho dos elementos em telas menores */
+@media (max-width: 895px){
+  header {
+   padding: 20px;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  nav ul {
+    flex-direction: colum;
+    gap: 10px;
+    align-items: center;
+    display: none;
+  }
+
+  nav ul li a{
+    font-size: 16px;
+  }
+  
+  #home h1 {
+    font-size: 20px;    white-space: nowrap;
+    width: 100%;
+  }
+
+  #sobre {
+    font-size: 16px;
+    padding-top: 20px;
+  }
+
+  .icons {
+    gap: 30px;
+    font-size: 40px;
+  }
+
+  .container_categorias {
+    display: block;
+    text-align: center;
+  }
+
+  .container_categorias ul {
+    display: inline-block;
+    padding: 0;
+  }
+
+  #projetos .div-container,
+  #projetos .div-container-2,
+  #projetos .div-container-3 {
+    display: block;
+    margin-bottom: 40px;
+    align-items: center;
+  }
+
+  #projetos .text {
+    text-align: center;
+    
+  }
+
+  #certificados ul {
+    padding-left: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  #certificados ul li a {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+  }
+
+
+  .icons li i {
+    font-size: 30px;
+  }
+
+  .container_categorias h3 {
+    font-size: 20px;
+  }
+
+  #sobre p {
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 5px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .redes_icons a {
+    font-size: 20px;
+  }
+}
