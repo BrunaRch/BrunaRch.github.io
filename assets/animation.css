@@ -1,0 +1,28 @@
+@keyframes floating {
+  0% {
+  transform: translateY(0px);
+  }
+  50% {
+  transform: translate(-20px);
+  }
+  100% {
+  transform: translat(0px);
+  }
+}
+
+.animation-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.animation-icon {
+  font-size: 300px;
+  color: #bb9bdb;
+  animation: floating 7s ease-in-out infinite;
+  position: relative;
+  top: -200px;
+  left: -100px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: text-shadow 0.3s ease-in-out;
+}

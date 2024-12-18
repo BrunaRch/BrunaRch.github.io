@@ -48,7 +48,11 @@ body {
 }
 
 #sobre {
-  padding: 200px;
+  padding: 40px;
+}
+
+.sobre-container{
+  padding-left: 100px;
 }
 
 #sobre h2,
@@ -65,9 +69,9 @@ body {
 
 #sobre p {
   font-size: 18px;
-  padding-top: 47px;
+  padding-top: 60px;
   color: #b8acc9;
-  text-align: justify;
+  /* text-align: justify; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -275,3 +279,4 @@ body {
     font-size: 20px;
   }
 }
+
