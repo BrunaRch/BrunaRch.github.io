@@ -165,7 +165,6 @@ body {
 .foot {
   color: #512e70;
   padding: 30px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }

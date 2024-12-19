@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap');
 
 *{
-     margin: 0;
+    margin: 0;
     padding: 0;
     border: 0;
     font-family: "Montserrat", sans-serif; 
 }
 
 #projetos {
-    padding: 50px;
-    /* text-align: center; */
+    padding: 50px; 
+    text-align: center; 
 }
 
 .div-container, .div-container-3 {

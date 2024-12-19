@@ -17,12 +17,12 @@
 }
 
 .animation-icon {
-  font-size: 300px;
-  color: #bb9bdb;
-  animation: floating 7s ease-in-out infinite;
+  font-size: 280px;
+  color: #d6e92986;
+  animation: floating 5s ease-in-out infinite;
   position: relative;
-  top: -200px;
+  top: -280px;
   left: -100px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
-  transition: text-shadow 0.3s ease-in-out;
+  transition: text-shadow 0.8s ease-in-out;
 }
