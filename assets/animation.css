@@ -1,12 +1,12 @@
 @keyframes floating {
   0% {
-  transform: translateY(0px);
+    transform: translateY(0px);
   }
   50% {
-  transform: translate(-20px);
+    transform: translate(-20px);
   }
   100% {
-  transform: translat(0px);
+    transform: translat(0px);
   }
 }
 
@@ -22,7 +22,11 @@
   animation: floating 5s ease-in-out infinite;
   position: relative;
   top: -280px;
-  left: -100px;
+  left: -150px;
   text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
   transition: text-shadow 0.8s ease-in-out;
 }
+
+
+
+
