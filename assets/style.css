@@ -48,7 +48,8 @@ body {
 }
 
 #sobre {
-  padding: 30px;
+  padding: 10px;
+  margin-bottom: -70px;
 }
 
 .sobre-container{
@@ -63,6 +64,7 @@ body {
   padding-bottom: 100px;
   text-align: center;
   font-family: "montserrat", sans-serif;
+  margin-bottom: 40px;
   font-weight: 380;
   letter-spacing: 3px;
 }
@@ -71,7 +73,7 @@ body {
   font-size: 18px;
   padding-top: 60px;
   color: #b8acc9;
-  /* text-align: justify; */
+  text-align: justify;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -115,7 +117,7 @@ body {
 
 /* Seção certificados  */
 #certificados h2 {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 #certificados {
