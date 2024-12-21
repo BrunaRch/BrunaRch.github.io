@@ -27,6 +27,35 @@
   transition: text-shadow 0.8s ease-in-out;
 }
 
+.typing {
+  color: aliceblue;
+  animation: blink 4s infinite, changeColor 3s;
+}
+
+/* Animação do home */
+@keyframes blink {
+  0%, 100% {
+      opacity: 1;
+  }
+  50% {
+      opacity: 0;
+  }
+}
+
+@keyframes changeColor {
+  0% {
+      color: aliceblue;
+  }
+  33% {
+      color: #eba1d8;
+  }
+  66% {
+      color: #6d5dfc;
+  }
+  100% {
+      color: aliceblue;
+  }
+}
 
 
 
