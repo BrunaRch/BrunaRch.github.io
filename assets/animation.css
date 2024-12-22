@@ -19,7 +19,7 @@
 .animation-icon {
   font-size: 280px;
   color: #d6e92986;
-  animation: floating 5s ease-in-out infinite;
+  animation: floating 3s ease-in-out infinite;
   position: relative;
   top: -280px;
   left: -150px;
@@ -34,28 +34,26 @@
 
 /* Animação do home */
 @keyframes blink {
-  0%, 100% {
-      opacity: 1;
+  0%,
+  100% {
+    opacity: 1;
   }
   50% {
-      opacity: 0;
+    opacity: 0;
   }
 }
 
 @keyframes changeColor {
   0% {
-      color: aliceblue;
+    color: aliceblue;
   }
   33% {
-      color: #eba1d8;
+    color: #eba1d8;
   }
   66% {
-      color: #6d5dfc;
+    color: #6d5dfc;
   }
   100% {
-      color: aliceblue;
+    color: aliceblue;
   }
 }
-
-
-

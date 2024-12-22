@@ -11,10 +11,12 @@
   
 .home .redes_icons a {
   font-size: 24px;
-  transition: text-shadow 0.4s ease-in-out, transform 0.2s ease-in-out, color 0.1s ease-in-out;
   text-decoration: none;
   color: #eba1d8;
   margin: 3px;
+  animation: floating 3s ease-in-out infinite;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+  transition: text-shadow 0.8s ease-in-out;
 }
 
 .home .redes_icons a:hover {
